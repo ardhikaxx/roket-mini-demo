@@ -91,10 +91,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // 5. Scroll Reveal Animation
-    const revealElements = document.querySelectorAll('.category-card, .product-item, .feature-card, .about-img, .step-item, .section-padding h2, .cta-content');
+    const revealElements = document.querySelectorAll('.category-card, .product-item, .feature-card, .about-img, .step-item, .section-padding h2, .cta-content, .reveal');
     
     revealElements.forEach(el => {
-        el.classList.add('reveal');
+        if (!el.classList.contains('reveal')) {
+            el.classList.add('reveal');
+        }
     });
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
