@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - Roket Mini Moto</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex flex-column" href="index.html">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-motorcycle text-primary-custom fs-4"></i>
+                    <span class="fw-bold fs-5" style="letter-spacing: 1px;">ROKET MINI MOTO</span>
+                </div>
+                <span style="font-size: 0.65rem; color: rgba(255,255,255,0.7); letter-spacing: 0.5px; margin-top: 2px;">Trail Mini dan Mobil Aki Murah Bondowoso</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html#kategori">Kategori</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 active" href="index.html#produk">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html#tentang">Tentang</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="https://wa.me/628xxxxxxxxxx" target="_blank" class="btn btn-primary-custom rounded-pill px-4 py-2 fw-bold w-100">
+                        <i class="fa-brands fa-whatsapp me-2"></i>Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-light-custom py-3 border-bottom">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Beranda</a></li>
+                    <li class="breadcrumb-item"><a href="index.html#produk" class="text-decoration-none text-muted">Produk</a></li>
+                    <li class="breadcrumb-item active fw-bold" aria-current="page" id="breadcrumbName">Detail Produk</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row gx-5">
+                <!-- Product Image -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden sticky-lg-top" style="top: 100px;">
+                        <img src="assets/images/mini-trail-1.jpg" id="detailImg" class="w-100 object-fit-cover" style="height: 500px;" alt="Product Image">
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <span class="badge bg-primary px-3 py-2 rounded-pill" id="detailCategory">Kategori</span>
+                    </div>
+                    <h2 class="fw-bold mb-3" id="detailTitle">Memuat Produk...</h2>
+                    <h3 class="text-primary-custom fw-bold mb-4" id="detailPrice">Rp -</h3>
+                    
+                    <p class="text-muted mb-4" style="line-height: 1.8;" id="detailDesc">
+                        Deskripsi produk sedang dimuat...
+                    </p>
+
+                    <!-- Spesifikasi -->
+                    <div class="card border-0 bg-light-custom rounded-4 p-4 mb-4">
+                        <h5 class="fw-bold mb-3"><i class="fa-solid fa-list-check me-2 text-primary-custom"></i>Spesifikasi Utama</h5>
+                        <table class="table table-borderless mb-0" id="detailSpecs">
+                            <!-- Injected by JS -->
+                        </table>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="d-flex flex-wrap gap-3 mb-5">
+                        <div class="d-flex align-items-center bg-white border rounded px-3 py-2">
+                            <i class="fa-solid fa-shield-halved text-success me-2"></i> Garansi Toko
+                        </div>
+                        <div class="d-flex align-items-center bg-white border rounded px-3 py-2">
+                            <i class="fa-solid fa-wrench text-warning me-2"></i> Ready Sparepart
+                        </div>
+                        <div class="d-flex align-items-center bg-white border rounded px-3 py-2">
+                            <i class="fa-solid fa-truck-fast text-primary me-2"></i> Siap Kirim
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="d-grid gap-3 d-md-flex">
+                        <a href="#" id="btnWaBeli" target="_blank" class="btn btn-primary-custom btn-lg rounded-pill px-5 fw-bold d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-whatsapp fs-4 me-2"></i> Pesan Sekarang
+                        </a>
+                        <a href="index.html#produk" class="btn btn-outline-secondary btn-lg rounded-pill px-4 fw-bold">
+                            <i class="fa-solid fa-arrow-left me-2"></i> Kembali
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row text-center text-lg-start">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-white fw-bold mb-4 d-flex align-items-center justify-content-center justify-content-lg-start gap-2">
+                        <i class="fa-solid fa-motorcycle text-primary-custom fs-3"></i> 
+                        <div class="d-flex flex-column justify-content-center text-start">
+                            <span style="line-height: 1; text-transform: uppercase;">ROKET MINI MOTO</span>
+                            <span style="font-size: 0.75rem; text-transform: capitalize; letter-spacing: 0; font-weight: 500; color: rgba(255,255,255,0.85); margin-top: 6px; font-family: 'Inter', sans-serif;">Trail Mini dan Mobil Aki Murah Bondowoso</span>
+                        </div>
+                    </h4>
+                    <p class="text-white">Solusi tepat untuk kendaraan mini berkualitas dengan harga terjangkau dan full garansi.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-5 mb-lg-0 offset-lg-2">
+                    <h5 class="mb-4">Navigasi</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html#beranda">Beranda</a></li>
+                        <li class="mb-2"><a href="index.html#produk">Produk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-4">Kontak Kami</h5>
+                    <ul class="list-unstyled text-white d-inline-block text-start">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-location-dot mt-1 me-3 text-primary-custom"></i>
+                            <span>Utara Hotel Baru, Jln. Kartini No.41, Pegadaian, Blindungan,<br>Kec. Bondowoso, Jawa Timur 68212</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fa-brands fa-whatsapp me-3 text-primary-custom"></i>
+                            <span>+62 8xx-xxxx-xxxx</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary mt-5 mb-4">
+            <div class="text-center text-muted small">
+                &copy; 2026 Roket Mini Moto. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Dynamic Content Script -->
+    <script>
+        const productsDB = {
+            'mini-trail-50cc': {
+                title: 'Mini Trail 50cc 2 Tak',
+                category: 'Mini Trail',
+                price: 'Rp 2.500.000',
+                image: 'assets/images/mini-trail-1.jpg',
+                desc: 'Mini Trail 50cc 2 Tak sangat digemari karena tarikannya yang enteng dan responsif. Desain bodinya ramping sehingga sangat cocok dan aman digunakan oleh anak-anak usia 6 hingga 10 tahun untuk belajar mengendarai motor di medan offroad ringan maupun di halaman rumah.',
+                specs: {
+                    'Tipe Mesin': '50cc, 2 Tak, Silinder Tunggal',
+                    'Sistem Starter': 'Pull Start (Tarik)',
+                    'Bahan Bakar': 'Bensin Campur (Rasio 25:1)',
+                    'Kapasitas Tangki': '1.5 Liter',
+                    'Beban Maksimal': '50 kg',
+                    'Sistem Pengereman': 'Cakram (Depan & Belakang)'
+                }
+            },
+            'mobil-aki-rubicon': {
+                title: 'Mobil Aki Jeep Rubicon',
+                category: 'Mobil Aki',
+                price: 'Rp 1.850.000',
+                image: 'assets/images/mobil-aki-1.jpg',
+                desc: 'Hadirkan keseruan bermain anak dengan Mobil Aki berdesain Jeep Rubicon yang gagah ini. Mobil ini dilengkapi dengan remote control (kendali jarak jauh oleh orang tua) dan pedal gas manual untuk anak, memastikan keamanan ganda. Cocok untuk jalanan rata maupun paving block.',
+                specs: {
+                    'Tipe Baterai': '12V 7Ah (Awet Tahan Lama)',
+                    'Motor Penggerak': '2 Gearbox (Tenaga Lebih Kuat)',
+                    'Sistem Kendali': 'Manual Injak Pedal & Remote Control',
+                    'Beban Maksimal': '35 kg',
+                    'Fitur Hiburan': 'Bluetooth, Pemutar Musik MP3, Lampu LED Nyala'
+                }
+            },
+            'atv-mini-110cc': {
+                title: 'ATV Hunter 110cc Matic',
+                category: 'ATV Mini',
+                price: 'Rp 7.500.000',
+                image: 'assets/images/atv-mini-1.jpg',
+                desc: 'ATV kelas menengah yang tangguh dengan mesin 110cc 4 Tak otomatis. Diciptakan khusus untuk melibas medan tanah, lumpur, maupun rerumputan tebal. Sangat stabil dikendarai oleh remaja hingga orang dewasa, cocok untuk hiburan keluarga atau penyewaan di tempat wisata.',
+                specs: {
+                    'Tipe Mesin': '110cc, 4 Tak, Otomatis (Matic)',
+                    'Sistem Starter': 'Elektrik (Tinggal Pencet Tombol)',
+                    'Bahan Bakar': 'Bensin Murni (Pertamax/Pertalite)',
+                    'Beban Maksimal': '100 kg',
+                    'Ukuran Ban': 'Ring 7 atau 8 Inch (Ban Pacul)',
+                    'Sistem Pengereman': 'Cakram Hidrolik (Belakang), Tromol (Depan)'
+                }
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id') || 'mini-trail-50cc';
+            
+            const product = productsDB[productId];
+            
+            if(product) {
+                document.title = product.title + ' - Roket Mini Moto';
+                document.getElementById('breadcrumbName').innerText = product.title;
+                document.getElementById('detailImg').src = product.image;
+                document.getElementById('detailCategory').innerText = product.category;
+                document.getElementById('detailTitle').innerText = product.title;
+                document.getElementById('detailPrice').innerText = product.price;
+                document.getElementById('detailDesc').innerText = product.desc;
+                
+                // Build specs table
+                let specsHTML = '';
+                for (const [key, value] of Object.entries(product.specs)) {
+                    specsHTML += `
+                        <tr>
+                            <td class="text-muted" style="width: 40%; padding-left: 0;">${key}</td>
+                            <td class="fw-bold">${value}</td>
+                        </tr>
+                    `;
+                }
+                document.getElementById('detailSpecs').innerHTML = specsHTML;
+
+                // Set WA link
+                const waMessage = encodeURIComponent(`Halo Roket Mini Moto, saya tertarik untuk membeli produk *${product.title}*. Apakah stoknya masih tersedia?`);
+                document.getElementById('btnWaBeli').href = `https://wa.me/628xxxxxxxxxx?text=${waMessage}`;
+            } else {
+                document.getElementById('detailTitle').innerText = "Produk tidak ditemukan";
+                document.getElementById('detailDesc').innerText = "Silakan kembali ke halaman utama untuk melihat katalog produk kami.";
+            }
+        });
+    </script>
+</body>
+</html>
