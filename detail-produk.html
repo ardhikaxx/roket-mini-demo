@@ -91,9 +91,9 @@
                     <!-- Spesifikasi -->
                     <div class="mb-5">
                         <h5 class="fw-bold mb-3 border-bottom pb-2"><i class="fa-solid fa-list-check me-2 text-primary-custom"></i>Spesifikasi Utama</h5>
-                        <table class="table table-borderless table-sm mb-0" id="detailSpecs">
+                        <div id="detailSpecs">
                             <!-- Injected by JS -->
-                        </table>
+                        </div>
                     </div>
 
                     <!-- Trust Badges -->
@@ -232,14 +232,14 @@
                 document.getElementById('detailPrice').innerText = product.price;
                 document.getElementById('detailDesc').innerText = product.desc;
                 
-                // Build specs table
+                // Build specs list
                 let specsHTML = '';
                 for (const [key, value] of Object.entries(product.specs)) {
                     specsHTML += `
-                        <tr>
-                            <td class="text-muted" style="width: 40%; padding-left: 0;">${key}</td>
-                            <td class="fw-bold">${value}</td>
-                        </tr>
+                        <div class="row mb-2">
+                            <div class="col-5 col-md-4 text-muted">${key}</div>
+                            <div class="col-7 col-md-8 fw-bold">${value}</div>
+                        </div>
                     `;
                 }
                 document.getElementById('detailSpecs').innerHTML = specsHTML;
