@@ -540,28 +540,55 @@
         </div>
     </section>
 
-    <!-- Section Lokasi -->
-    <section id="lokasi" class="section-padding">
+    <!-- Section Lokasi (Maps) -->
+    <section class="section-padding bg-light-custom">
         <div class="container">
+            <div class="row text-center mb-5 reveal">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="fw-bold">Lokasi Toko Kami</h2>
+                    <p class="text-muted">Kunjungi toko fisik kami untuk melihat dan mencoba langsung kendaraan mini impian Anda.</p>
+                </div>
+            </div>
             <div class="row align-items-center">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h2 class="fw-bold mb-4">Kunjungi Toko Kami</h2>
-                    <div class="card border-0 shadow-sm p-4 mb-4" style="border-radius: var(--border-radius);">
-                        <h4 class="fw-bold text-primary-custom mb-3">Roket Mini Moto</h4>
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="fa-solid fa-location-dot text-primary-custom mt-1 me-3 fs-5"></i>
-                            <p class="mb-0 text-muted">Utara Hotel Baru, Jln. Kartini No.41, Pegadaian, Blindungan, Kec. Bondowoso, Kabupaten Bondowoso, Jawa Timur 68212</p>
+                <div class="col-lg-4 mb-5 mb-lg-0 reveal">
+                    <div class="card border-0 shadow-lg p-4 bg-dark-custom text-white position-relative overflow-hidden" style="border-radius: var(--border-radius);">
+                        <!-- Decorative bg icon -->
+                        <i class="fa-solid fa-map-pin position-absolute" style="font-size: 15rem; right: -15%; bottom: -10%; opacity: 0.05; color: white;"></i>
+                        
+                        <div class="position-relative" style="z-index: 2;">
+                            <h4 class="fw-bold mb-4 d-flex align-items-center">
+                                <i class="fa-solid fa-store text-primary-custom me-2"></i> Roket Mini Moto
+                            </h4>
+                            <hr class="border-secondary mb-4">
+                            <ul class="list-unstyled mb-4">
+                                <li class="d-flex mb-4">
+                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 45px; height: 45px;">
+                                        <i class="fa-solid fa-map-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="d-block mb-1 text-primary-custom">Alamat Lengkap</strong>
+                                        <span class="small" style="color: rgba(255,255,255,0.85); line-height: 1.6; display: block;">Utara Hotel Baru, Jln. Kartini No.41, Pegadaian, Blindungan, Kec. Bondowoso, Jawa Timur 68212</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex mb-4">
+                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 45px; height: 45px;">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="d-block mb-1 text-primary-custom">Jam Operasional</strong>
+                                        <span class="small" style="color: rgba(255,255,255,0.85);">Setiap Hari: 08.00 - 20.00 WIB</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="https://wa.me/628xxxxxxxxxx" target="_blank" class="btn w-100 fw-bold py-3 rounded-pill shadow" style="background-color: #25d366; color: white; border: none; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <i class="fa-brands fa-whatsapp fs-5 me-2 align-middle"></i> <span class="align-middle">Chat via WhatsApp</span>
+                            </a>
                         </div>
-                        <!-- Placeholder Maps Link -->
-                        <a href="https://maps.google.com" target="_blank" class="btn btn-outline-custom w-100 mt-2">
-                            <i class="fa-solid fa-map-location-dot me-2"></i> Buka di Google Maps
-                        </a>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="map-container">
-                        <!-- Google Maps Embed Link -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d814.9317170278854!2d113.82372810864346!3d-7.9105452155397495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6dde6cb9cf9a9%3A0x12b6ad7fa0f55022!2sTRAIL%20Mini%20MURAH%20Bondowoso.toko%20sepeda%20listrik.bengkel%20sepeda%20listrik!5e0!3m2!1sid!2sid!4v1784932303504!5m2!1sid!2sid" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <div class="col-lg-8 reveal" style="transition-delay: 200ms;">
+                    <div class="card border-0 shadow-lg p-2 bg-white" style="border-radius: var(--border-radius);">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d814.9317170278854!2d113.82372810864346!3d-7.9105452155397495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6dde6cb9cf9a9%3A0x12b6ad7fa0f55022!2sTRAIL%20Mini%20MURAH%20Bondowoso.toko%20sepeda%20listrik.bengkel%20sepeda%20listrik!5e0!3m2!1sid!2sid!4v1784932303504!5m2!1sid!2sid" width="100%" height="450" style="border:0; border-radius: calc(var(--border-radius) - 4px);" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </div>
                 </div>
             </div>
